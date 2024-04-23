@@ -1,0 +1,48 @@
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#texto{
+    padding: 5px;
+}
+
+.inputtask{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 6px;
+}
+
+#b1{
+    background-color: rgba(82, 145, 19, 0.726);
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+    border: none;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white; 
+    border: none; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    border-radius: 5px;
+}
+
+span{
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+}

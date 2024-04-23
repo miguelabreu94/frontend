@@ -2,12 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="tarefa2_aula4.css">
+    <script src = "aula4_tarefa2.js"></script>
 </head>
 <body>
-    <input type = "text" name="task"/>
-    
+    <div class="inputtask">
+        <input type = "text" id="texto" name="task" placeholder="Add a new task"/>
+        <input type = "button" id="b1" value="Add task" onclick="addTask()"/>
+    </div>
+
+    <div id="list_container">
+        <ul id ="todo_list"></ul>
+    </div>
 </body>
 </html>
