@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Exercicio 1 -->
+    <input type ="button" id= "clicks" value="Click" onclick="contador()"></button>
+
+    <p id="contador"></p>
+
+    <!-- Exercicio 2 -->
+    <p id ="par">Texto</p>
+
+    <!-- Exercicio 3 -->
+    <input type = "button" id="coloredButton" value="Muda Cor" onclick="cor()">
+    <br> <br>
+
+    <!-- Exercicio 4 -->
+    <input type = "button" id="visionButton" value="Visibilidade" onclick="paragraph()">
+    
+    <p id="par2"> Paragrafo</p>
+</body>
+<script>
+    // Exercicio 1
+    var counter = 0;
+    function contador(){
+        counter ++;
+        document.getElementById("contador").innerHTML = "Contador: " + counter;
+    }
+
+    // Exercicio 2
+    document.getElementById("par").innerText = "Hello World";
+
+    // Exercicio 3
+    function cor(){
+        let button = document.getElementById("coloredButton");
+        button.style.color = "red";
+    }
+
+    // Exercicio 4
+    function paragraph(){
+        let paragraph = document.getElementById("par2")
+        if(paragraph.style.display === "none"){
+            paragraph.style.display = "block"
+        }
+        else{
+            paragraph.style.display = "none"
+        }
+    }
+</script>
+</html>
